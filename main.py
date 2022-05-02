@@ -25,10 +25,11 @@ async def on_message(msg: discord.Message):
     message = msg.content
 
     if message.startswith("!!counter"):
-        champ = message.split("!!counter ", 1)[1]
+        champ = message.split()[1]
         if champ.lower() in champions:
             await msg.channel.send(f"{get_quote()}\n\nO meglio, impara a giocare -A.C.")
         else:
             await msg.channel.send("Scrivi $counter <campione> per info su come counterare un campione")
+
 token = os.environ.get("TOKEN")
 client.run(token)
