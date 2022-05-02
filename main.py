@@ -55,10 +55,10 @@ async def on_message(msg: discord.Message):
     if message.startswith("!!help") or message.startswith("!!h"):
         await msg.channel.send(
             '''Here's the list of available commands:\n
-            !!help (or !!h) to display this message\n
-            !!counter (or !!c) for tips on how to counter a champ\n
-            !!tips (or !!t) for tips on how to play your champ\n
-            !!lost (or !!depressed) to get a random motivational quote
+    !!help (or !!h) to display this message\n
+    !!counter <champ> (or !!c <champ>) for tips on how to counter a champ\n
+    !!tips <champ> (or !!t <champ>) for tips on how to play your champ\n
+    !!lost (or !!depressed) to get a random motivational quote
         ''')
 
     if message.startswith("!!counter") or message.startswith("!!c"):
