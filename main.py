@@ -62,7 +62,8 @@ async def on_message(msg: discord.Message):
     if message.startswith("!!counter") or message.startswith("!!c"):
         if len(message.split()) == 0:
             await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
-        champ = message.split()[1].lower().capitalize()
+        command = message.split()[0]
+        champ = message.split(f"{command} ", 1)[1].lower()
         if champ in champions:
             await msg.channel.send(f"Here's a list of tips to defeat {champ}:\n{get_enemy_tips(champ)}Good luck!")
         else:
@@ -71,7 +72,8 @@ async def on_message(msg: discord.Message):
     if message.startswith("!!tips") or message.startswith("!!t"):
         if len(message.split()) == 0:
             await msg.channel.send("Type !!tips <champ> or !!t <champ> to get tips on how to play a champ")
-        champ = message.split()[1].lower()
+        command = message.split()[0]
+        champ = message.split(f"{command} ", 1)[1].lower()
         if champ in champions:
             await msg.channel.send(f"Here's a list of tips for {champ.capitalize()}:\n{get_ally_tips(champ)}Good luck!")
         else:
