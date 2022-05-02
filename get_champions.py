@@ -11,7 +11,7 @@ def get_champ_data():
                 "enemy_tips": champ['enemy_tips'],
                 "ally_tips": champ['ally_tips']
                 }
-            champions[champ["name"]] = entry
+            champions[champ["name"].lower()] = entry
 
     with open("champions_data.json", "w", encoding="utf8") as champion_dataset:
         json.dump(champions, champion_dataset, indent=4)
@@ -21,5 +21,3 @@ def get_champ_list():
         data = json.load(ch)
         champions = list(data.keys())
         return champions
-
-get_champ_data()
