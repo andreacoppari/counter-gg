@@ -17,7 +17,7 @@ def get_enemy_tips(champ: str):
             return "You spelled the champion wrong or this champ doesn't exist"
         tips = data[champ]["enemy_tips"]
         if len(tips) == 0:
-            return " - Sorry! no tips available yet!\n"
+            return " \u2022 Sorry! no tips available yet!\n"
         for tip in tips:
             res += f" - {tip}\n"
         return res
@@ -28,7 +28,7 @@ def get_ally_tips(champ: str):
         data = json.load(ch)
         tips = data[champ]["ally_tips"]
         if len(tips) == 0:
-            return " - Sorry! no tips available yet!"
+            return " \u2022 Sorry! no tips available yet!"
         for tip in tips:
             res += f" - {tip}\n"
         return res
@@ -53,24 +53,24 @@ async def on_message(msg: discord.Message):
     if message.startswith("!!help") or message.startswith("!!h"):
         await msg.channel.send(
             '''Here's the list of available commands:\n
-    !!help (or !!h) to display this message\n
-    !!counter <champ> (or !!c <champ>) for tips on how to counter a champ\n
-    !!tips <champ> (or !!t <champ>) for tips on how to play your champ\n
-    !!lost (or !!depressed) to get a random motivational quote
+    \u2022  !!help (or !!h) to display this message\n
+    \u2022  !!counter <champ> (or !!c <champ>) for tips on how to counter a champ\n
+    \u2022  !!tips <champ> (or !!t <champ>) for tips on how to play your champ\n
+    \u2022  !!lost (or !!depressed) to get a random motivational quote
         ''')
 
-    if message == "!!counter" or message == "!!c":
-        await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
     if message.startswith("!!counter") or message.startswith("!!c"):
+        if len(message.split()) == 0:
+            await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
         champ = message.split()[1].lower().capitalize()
         if champ in champions:
             await msg.channel.send(f"Here's a list of tips to defeat {champ}:\n{get_enemy_tips(champ)}Good luck!")
         else:
             await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
 
-    if message == "!!tips" or message == "!!t":
-        await msg.channel.send("Type !!tips <champ> or !!t <champ> to get tips on how to play a champ")
     if message.startswith("!!tips") or message.startswith("!!t"):
+        if len(message.split()) == 0:
+            await msg.channel.send("Type !!tips <champ> or !!t <champ> to get tips on how to play a champ")
         champ = message.split()[1].lower().capitalize()
         if champ in champions:
             await msg.channel.send(f"Here's a list of tips for {champ}:\n{get_ally_tips(champ)}Good luck!")
