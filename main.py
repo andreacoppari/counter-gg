@@ -17,7 +17,7 @@ def get_enemy_tips(champ: str):
             return "You spelled the champion wrong or this champ doesn't exist"
         tips = data[champ]["enemy_tips"]
         if len(tips) == 0:
-            return " - Sorry! no tips available yet!"
+            return " - Sorry! no tips available yet!\n"
         for tip in tips:
             res += f" - {tip}\n"
         return res
