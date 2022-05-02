@@ -106,7 +106,7 @@
             "Hawkshot reveals units in brush. If a team fight is occuring in the jungle it can give you a significant advantage."
         ]
     },
-    "Aurelion Sol": {
+    "Aurelion sol": {
         "enemy_tips": [
             "Try to get inside his orbit, since his stars can't hurt you up close.",
             "His stars disappear while stunned or silenced, giving you an easy opportunity to fight him.",
@@ -209,7 +209,7 @@
             "Lead your enemy when targeting with Noxious Blast to ensure the hit."
         ]
     },
-    "Cho'Gath": {
+    "Cho'gath": {
         "enemy_tips": [
             "Purchasing a few HP items decreases the chances of Cho'Gath killing you quickly.",
             "Focus on preventing Cho'Gath from reaching his max size.",
@@ -501,7 +501,7 @@
             "Timing Janna's ultimate can push enemies away from a wounded ally or even separate enemies."
         ]
     },
-    "Jarvan IV": {
+    "Jarvan iv": {
         "enemy_tips": [
             "Keep out of the path between Jarvan IV and his Demacian Standard to avoid being knocked up in the air.",
             "Cataclysm's terrain is a frightening force to fight against, but movement abilities can go through it."
@@ -558,7 +558,7 @@
             "When a fight starts try to stay on the edge of fray by poking with rockets and Zap!. Do not run in and unload with the minigun until you feel it is safe."
         ]
     },
-    "Kai'Sa": {
+    "Kai'sa": {
         "enemy_tips": [
             "Kai'Sa is very good at picking off isolated enemies. Stick together against her.",
             "Kai'Sa is very vulnerable to getting outranged by mages and long range carries.",
@@ -661,7 +661,7 @@
             "You can land an initial Mark of the Storm debuff on an opponent with Thundering Shuriken, and then add to it with Electrical Surge."
         ]
     },
-    "Kha'Zix": {
+    "Kha'zix": {
         "enemy_tips": [
             "Taste Their Fear deals bonus damage to targets that are isolated. Gain an advantage by fighting near allied minions, champions, or turrets.",
             "Leap and Void Assault have long cooldowns. Kha'Zix is very vulnerable when these are not available."
@@ -696,7 +696,7 @@
             "Chaaaaaaaarge!!! can be cast at a great range. Try and predict where the enemy team will be by the time you reach them."
         ]
     },
-    "Kog'Maw": {
+    "Kog'maw": {
         "enemy_tips": [
             "Kog'Maw doesn't have a good escape ability, so he is especially prone to ganks.",
             "Run away from Kog'Maw after he dies!!!!",
@@ -709,7 +709,7 @@
             "Make the most out of your Icathian Surprise."
         ]
     },
-    "LeBlanc": {
+    "Leblanc": {
         "enemy_tips": [
             "LeBlanc's ultimate can create fake LeBlancs during her spellcast or, rarely, at a distant position. ",
             "The fake LeBlanc created at a distance will always run at the nearest Champion, cast a harmless spell, then immediately disappear.",
@@ -722,7 +722,7 @@
             "You can chain Sigil of Malice and Ethereal Chains to prevent characters with blink from escaping for up to 4 seconds."
         ]
     },
-    "Lee Sin": {
+    "Lee sin": {
         "enemy_tips": [
             "Stay spread out to minimize the impact of Lee Sin's ultimate, Dragon's Rage.",
             "Lee Sin has powerful tools to combat physical damage in Iron Will and Cripple but he is still vulnerable to magic damage.",
@@ -829,7 +829,7 @@
             "Maokai's passive makes him extremely durable against focus fire from spells - so long as he can still basic attack something."
         ]
     },
-    "Master Yi": {
+    "Master yi": {
         "enemy_tips": [
             "Meditate is an effective method of healing damage over time, but Master Yi is susceptible to coordinated team ganks early in the game.",
             "If Master Yi tries to farm with Alpha Strike, hit him a few times so he has to use mana with Meditate to heal.",
@@ -841,7 +841,7 @@
             "Try using Alpha Strike on a minion in front of an enemy champion so you are placed at a safe distance at the end of the spell."
         ]
     },
-    "Miss Fortune": {
+    "Miss fortune": {
         "enemy_tips": [
             "Miss Fortune's speed boost is removed if she is damaged by an enemy.",
             "Miss Fortune is easy to kill if you can reach her; target her first in team fights."
@@ -943,7 +943,19 @@
             "Use Shroud of Darkness in tandem with Paranoia's dash. Your opponents may panic and waste a critical disable on your spell shield."
         ]
     },
-    "Nunu & Willump": {
+    "Nunu & willump": {
+        "enemy_tips": [
+            "Interrupting the charge up on Absolute Zero will lower the amount of damage your team takes.",
+            "Using Summoner Flash is a surefire way to escape Absolute Zero.",
+            "Biggest Snowball Ever moves very fast but cannot turn as quickly, so don't try to escape it by running away in a straight line.  Instead, make sudden, sharp turns."
+        ],
+        "ally_tips": [
+            "Consume allows Nunu to stay in a lane against ranged opponents.",
+            "You can choose to interrupt Absolute Zero early for partial damage if an opponent is about to run out of range.",
+            "It's often beneficial to delay the casting of Absolute Zero until the initial round of disables are used. Try to hang back before rushing into a team fight."
+        ]
+    },
+    "Nunu": {
         "enemy_tips": [
             "Interrupting the charge up on Absolute Zero will lower the amount of damage your team takes.",
             "Using Summoner Flash is a surefire way to escape Absolute Zero.",
@@ -1311,7 +1323,7 @@
             "Get one of your spells to rank 5 as quickly as possible, they gain powerful bonus effects at max rank."
         ]
     },
-    "Tahm Kench": {
+    "Tahm kench": {
         "enemy_tips": [
             "When you see Tahm Kench use the shield from Thick Skin, remember that he just opted out of a good deal of healing. He will also not accumulate new gray health until Thick Skin comes off cooldown. Use this to your advantage!",
             "Watch out for Kench's Abyssal Dive - you can cancel it's channel with immobilizing crowd control effects."
@@ -1411,7 +1423,7 @@
             "If the enemy is stacking Armor, try building items like Last Whisper or Youmuu's Ghostblade."
         ]
     },
-    "Twisted Fate": {
+    "Twisted fate": {
         "enemy_tips": [
             "Focus on dodging Wild Cards early when your champion doesn't have the hit points to afford getting hit.",
             "If you have low Health, use Destiny as an indicator to run to safety. It will give you a head start in escaping any possible ganks."
@@ -1492,7 +1504,7 @@
             "Veigar is very fragile. It is valuable to select at least one summoner spell that can be used defensively."
         ]
     },
-    "Vel'Koz": {
+    "Vel'koz": {
         "enemy_tips": [
             "Vel'Koz is very dangerous if left alone in a fight. Try to focus him down early.",
             "Vel'Koz has fairly low mobility and is vulnerable to ganks.",
@@ -1595,7 +1607,7 @@
             "If you stun an enemy with Shocking Orb, follow up with a guaranteed center hit on Eye of Destruction."
         ]
     },
-    "Xin Zhao": {
+    "Xin zhao": {
         "enemy_tips": [
             "Xin Zhao is a powerful initiator with both his charge and ultimate dealing damage to all units around him. Try having your team stay spread out until he's used his ultimate.",
             "Xin Zhao relies heavily on his Three Talon Strikes for damage and cooldown resets, so preventing him from finishing his combo will have a dramatic effect."
