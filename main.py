@@ -1,7 +1,6 @@
 import discord
 import requests
 import json
-from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -25,7 +24,7 @@ async def on_message(msg: discord.Message):
     message = msg.content
 
     if message.startswith("!!counter"):
-        champ = message.split("!!counter", 1)[1] if message.split("!!counter", 1)[1] else ""
+        champ = message.split("!!counter ", 1)[1]
         if champ.lower() in champions:
             await msg.channel.send(f"{get_quote()}\n\nO meglio, impara a giocare -A.C.")
         else:
