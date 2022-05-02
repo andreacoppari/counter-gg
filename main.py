@@ -58,7 +58,8 @@ async def on_message(msg: discord.Message):
     !!tips <champ> (or !!t <champ>) for tips on how to play your champ\n
     !!lost (or !!depressed) to get a random motivational quote
         ''')
-    if message == "!!counter" or message == "!!c"
+
+    if message == "!!counter" or message == "!!c":
         await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
     if message.startswith("!!counter") or message.startswith("!!c"):
         champ = message.split()[1].lower().capitalize()
