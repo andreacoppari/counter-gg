@@ -1,6 +1,7 @@
 import discord
 import requests
 import json
+import os
 
 client = discord.Client()
 
@@ -29,5 +30,5 @@ async def on_message(msg: discord.Message):
             await msg.channel.send(f"{get_quote()}\n\nO meglio, impara a giocare -A.C.")
         else:
             await msg.channel.send("Scrivi $counter <campione> per info su come counterare un campione")
-
-client.run("OTcwNTkyNzc0OTA4OTUyNjE2.Ym-M9g.hHwhJAjCgOi0qJTTtmhLpNICDTM")
+token = os.environ.get("TOKEN")
+client.run(token)
