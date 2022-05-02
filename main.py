@@ -26,8 +26,6 @@ def get_ally_tips(champ: str):
     res = ""
     with open("champions_data.json", "r", encoding="utf8") as ch:
         data = json.load(ch)
-        if not data[champ]:
-            return "You spelled the champion wrong or this champ doesn't exist"
         tips = data[champ]["ally_tips"]
         if len(tips) == 0:
             return " - Sorry! no tips available yet!"
@@ -60,7 +58,8 @@ async def on_message(msg: discord.Message):
     !!tips <champ> (or !!t <champ>) for tips on how to play your champ\n
     !!lost (or !!depressed) to get a random motivational quote
         ''')
-
+    if message == "!!counter" or message == "!!c"
+        await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
     if message.startswith("!!counter") or message.startswith("!!c"):
         champ = message.split()[1].lower().capitalize()
         if champ in champions:
@@ -68,6 +67,8 @@ async def on_message(msg: discord.Message):
         else:
             await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
 
+    if message == "!!tips" or message == "!!t":
+        await msg.channel.send("Type !!tips <champ> or !!t <champ> to get tips on how to play a champ")
     if message.startswith("!!tips") or message.startswith("!!t"):
         champ = message.split()[1].lower().capitalize()
         if champ in champions:
