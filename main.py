@@ -31,5 +31,4 @@ async def on_message(msg: discord.Message):
         else:
             await msg.channel.send("Scrivi $counter <campione> per info su come counterare un campione")
 
-keep_alive()
-client.run("OTcwNTkyNzc0OTA4OTUyNjE2.Ym-M9g.pIMOY4hruFS6BmeflMehexkMDiY")
+client.run("OTcwNTkyNzc0OTA4OTUyNjE2.Ym-M9g.hHwhJAjCgOi0qJTTtmhLpNICDTM")
