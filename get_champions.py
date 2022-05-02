@@ -19,9 +19,7 @@ def get_champ_data():
 def get_champ_list():
     with open("champions_data.json", "r", encoding="utf8") as ch:
         data = json.load(ch)
-        champions = []
-        for champ in data:
-            champions.append(champ["name"])
+        champions = list(data.keys())
         return champions
 
 get_champ_data()
