@@ -19,7 +19,7 @@ def get_enemy_tips(champ: str):
         if len(tips) == 0:
             return " \u2022 Sorry! no tips available yet!\n"
         for tip in tips:
-            res += f" - {tip}\n"
+            res += f" \u2022 {tip}\n"
         return res
 
 def get_ally_tips(champ: str):
@@ -30,7 +30,7 @@ def get_ally_tips(champ: str):
         if len(tips) == 0:
             return " \u2022 Sorry! no tips available yet!"
         for tip in tips:
-            res += f" - {tip}\n"
+            res += f" \u2022 {tip}\n"
         return res
 
 def get_quote():
@@ -65,7 +65,7 @@ async def on_message(msg: discord.Message):
         command = message.split()[0]
         champ = message.split(f"{command} ", 1)[1].lower()
         if champ in champions:
-            await msg.channel.send(f"Here's a list of tips to defeat {champ}:\n{get_enemy_tips(champ)}Good luck!")
+            await msg.channel.send(f"Here's a list of tips to defeat {champ.capitalize()}:\n{get_enemy_tips(champ)}Good luck!")
         else:
             await msg.channel.send("Type !!counter <champ> or !!c <champ> to get tips on how to defeat a champ")
 
